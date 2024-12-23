@@ -1,0 +1,39 @@
+name: Generate CV
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the main branch
+
+jobs:
+  build-cv:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Install Pandoc and LaTeX
+      - name: Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+
+      # Generate PDF from Markdown using Pandoc
+      - name: Generate PDF
+        run: |
+          pandoc cv.md --pdf-engine=xelatex -o ./files/cv.pdf --template=template.tex
+      - name: Generate HTML
+        run: |
+          sed -E 's/\\textemoji\{([^\}]+)\}/\1/g' cv.md > cv_modified.md 
+          pandoc cv_modified.md -o index.html --template=template.html
+          rm cv_modified.md
+      # Commit and push generated PDF back to the repository
+      - name: Commit and push PDF
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/cv.pdf
+          git commit -m "Update generated CV PDF"
+          git push
