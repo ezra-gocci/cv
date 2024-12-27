@@ -20,15 +20,11 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y pandoc texlive-latex-base texlive-xetex texlive-fonts-recommended texlive-fonts-extra texlive-latex-recommended texlive-latex-extra
 
-      # Generate PDF from Markdown using Pandoc
-      - name: Generate PDF
-        run: |
-          pandoc cv.md --pdf-engine=xelatex -o ./files/cv.pdf --template=template.tex
-      - name: Generate HTML
+      - name: Generate HTML, PDF, MD
         run: |
           make
       # Commit and push generated PDF back to the repository
-      - name: Commit and push PDF
+      - name: Commit and push generated files
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
