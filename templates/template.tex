@@ -1,0 +1,208 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Root Template for CV
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Original author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+% Modified by:
+% Ezra Gonciarou <kostya.gonciarou@gmail>
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{templates/template}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\usepackage[utf8]{inputenc}  % Ensure UTF-8 input
+\usepackage{fontspec}        % Use modern font handling
+% \usepackage[margin=1in]{geometry}
+% \usepackage{hyperref}        % Handle hyperlinks
+% \hypersetup{
+%     colorlinks=true,         % Enable colored links
+%     linkcolor=blue,          % Color for internal links
+%     urlcolor=blue,           % Color for external links
+%     citecolor=blue           % Color for citations
+% }
+
+% % Handle tightlist issue
+% \providecommand{\tightlist}{%
+%   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% % Define main font
+% \setmainfont[
+%     Path=./fonts/,           % Path to the fonts folder
+%     UprightFont = NotoSerif-Regular,
+%     BoldFont = NotoSerif-Bold,
+%     ItalicFont = NotoSerif-Italic,
+%     BoldItalicFont = NotoSerif-BoldItalic
+% ]{NotoSerif}
+
+% % Define emoji fallback font
+% \newfontfamily\emojifont[
+%     Path=./fonts/,           % Path to the fonts folder
+%     UprightFont = NotoEmoji-Regular
+% ]{NotoEmoji}
+
+% % Create a command to use the emoji font
+% \DeclareTextFontCommand{\textemoji}{\emojifont}
+
+% % Use this command for emojis explicitly
+% % Emojis can now be added using \textemoji{📧}
+
+% % Customize section formatting
+% \usepackage{titlesec}
+% \titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+% \titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+% % Reduce spacing for lists
+% \usepackage{enumitem}
+% \setlist[itemize]{noitemsep, topsep=0pt}
+%-------------------------------------------------------------------------------
+\begin{document}
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% \firstname{$firstname$}
+% \middlename{$middlename$}
+% \lastname{$lastname$}
+% \name{$firstname$ $middlename$ $lastname$}
+% Available options: circle|rectangle,edge/noedge,left/right
+$if(photo)$
+\photo[circle,edge,right]{$photo$}
+$endif$
+\name{$firstname$}{$middlename$}{$lastname$}
+\position{$position$}
+\address{$contacts.location$}
+\linkedin{$contacts.linkedin$}
+\github{$contacts.github$}
+\telegram{$contacts.telegram$}
+\email{$contacts.email$}
+\mobile{$contacts.phone$}
+
+\quote{``Untrodden shores do call and beckon | While kindred hearts uphold and reckon"}
+
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader [L]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Ezra Gonciarou~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+$for(sections)$
+$if(sections.is_experience)$
+\cvsection{Professional Experience}
+    \begin{cventries}
+    $for(sections.items)$
+        \cventry
+            {$sections.items.job_title$}
+            {$sections.items.organization$ \href{$sections.items.url$}{\faGlobe \entrydatestyle{link}}}
+            {$sections.items.location$}
+            {$sections.items.date$}
+            $for(sections.items.highlights/allbutlast)${$sections.items.highlights$ = }$endfor${$sections.items.highlights/last$}
+            {
+            \begin{cvitems} % Description(s) of tasks/responsibilities
+                $for(sections.items.tasks)$
+                \item {\honorpositionstyle{$sections.items.tasks.lead$}: $sections.items.tasks.description$}
+                $endfor$
+            \end{cvitems}
+            \vspace{4.0mm}
+            \begin{cvsubentries}
+                \honorpositionstyle{Tech Stack:}
+                \cvsubentry{}{
+                $for(sections.items.tech_stack/allbutlast)$
+                $sections.items.tech_stack$ •
+                $endfor$
+                {$sections.items.tech_stack/last$}
+                }{}{}   
+            \end{cvsubentries}
+            }
+            \vspace{4.0mm}
+    $endfor$
+    \end{cventries}
+
+$endif$
+$if(sections.is_summary)$
+\cvsection{Summary}
+\begin{cvparagraph}
+
+{$sections.items[0]$}
+\end{cvparagraph}
+$endif$
+$if(sections.is_previous)$
+\cvsection{Previous Work Experience Highlights}
+\begin{cvskills}
+    $for(sections.items)$
+    \cvskill
+        {\bullet}{$sections.items$}% Category
+    $endfor$
+\end{cvskills}
+$endif$
+$if(sections.is_skills)$
+\cvsection{Skills}
+\begin{cvskills}
+    $for(sections.items)$
+    \cvskill
+        {$sections.items.lead$} % Category
+        {$sections.items.description$} % Skills
+    $endfor$
+\end{cvskills}
+$endif$
+$if(sections.is_education)$
+\cvsection{Education}
+\begin{cventries}
+    $for(sections.items)$
+    \cventry
+        {$sections.items.title$} % Degree
+        {$sections.items.organization$} % Institution
+        {$sections.items.location$} % Location
+        {$sections.items.date$} % Date(s)
+        {
+        \begin{cvitems} % Description(s) bullet points
+        \end{cvitems}
+        }
+    $endfor$
+\end{cventries}
+$endif$
+$endfor$
+
+\end{document}

@@ -26,15 +26,15 @@ jobs:
           pandoc cv.md --pdf-engine=xelatex -o ./files/cv.pdf --template=template.tex
       - name: Generate HTML
         run: |
-          sed -E 's/\\textemoji\{([^\}]+)\}/\1/g' cv.md > cv_modified.md 
-          pandoc cv_modified.md -o index.html --template=template.html
-          rm cv_modified.md
+          make
       # Commit and push generated PDF back to the repository
       - name: Commit and push PDF
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add files/cv.pdf
+          git add files/Ezra_Gonciarou_Senior_Software_Engineer_photo.pdf
+          git add files/Ezra_Gonciarou_Senior_Software_Engineer.pdf
+          git add files/Ezra_Gonciarou_Senior_Software_Engineer.md
           git add index.html
           git commit -m "Update generated CV PDF/HTML"
           git push
