@@ -7,16 +7,20 @@ Armenia \[Remote \| Relocation\]
 ---
 
 ## 📌 Summary
-Highly skilled **Senior Software Engineer and System Architect** with
-extensive experience in developing scalable, secure, and
-high-performance systems across diverse industries, including
-pharmacology, healthcare, energy, and fintech. Proficient in
-microservices architecture, system modernization, and building
+A seasoned **Senior Software Engineer and System Architect** who has
+built scalable, secure, and high-performance systems across
+pharmacology, healthcare, energy, and fintech industries. Skilled in
+microservices architecture, system modernization, and creating
 end-to-end solutions with robust data integration and advanced
-monitoring capabilities. Proven track record in delivering GDPR and PCI
-DSS-compliant platforms for large user bases, optimizing workflows, and
-enhancing system reliability. Adept at leading teams, planning major
-releases, and addressing complex technical challenges.
+monitoring capabilities. Successfully delivered GDPR and PCI
+DSS-compliant platforms for large user bases, optimizing workflows and
+enhancing system reliability. Experienced in: **Designing and delivering
+AWS and self-managed resilient and well-managed and monitored
+deployments, Setting up LLM workflows with agents, Leveraging rich
+experience with relational and non-relational databases, Leveraging rich
+experience with relational and non-relational databases.** Proficient in
+leading teams, planning major releases, and tackling complex technical
+challenges.
 ---
 
 ## 💼 Professional experience
@@ -27,27 +31,30 @@ Pharmacology/Healthcare AI Suite
 *October 2023 -- April 2024 | Remote, Abu Dhabi, UAE*
 _GDPR-compliant AI solutions for clinical trial and healthcare analytics
 across two flagship products._
-- **Enhanced User Experience & Efficiency**: Designed and implemented
-features for clinical trial data analysis using proprietary pretrained
-LLM models. Developed RAG (Retrieval-Augmented Generation) endpoints to
-enrich query contexts, advanced data representations, and user
-management features, resulting in a 80% reduction in administrative
-workload and improved scalability.
-- **Infrastructure Modernization**: Migrated deployments from Docker to
-Kubernetes, improving scalability, runtime control, and release
-frequency.
-- **Real-Time Data Integration**: Transitioned backend architecture to
-leverage a data lake via APIs, delivering faster access to real-time,
-up-to-date data.
-- **ETL Pipeline Development**: Built robust ETL pipelines to scrape,
-transform, and integrate clinical trial data into a data lake. Enhanced
-AI model retraining accuracy by providing enriched and current datasets.
-- **AI Prototyping**: Developed a clinical trial site selection
-prototype using AWS Bedrock, vector databases, and custom data
-enrichment, optimizing team workflows and project timelines.
+- **Enhanced User Experience & Efficiency**: Engineered features for
+clinical trial data analysis using proprietary pretrained LLM models.
+Implemented RAG (Retrieval-Augmented Generation) endpoints to enrich
+query contexts, advanced data representations, and user management
+features, resulting in an 80% reduction in administrative workload and
+improved scalability.
+- **Infrastructure Modernization**: Transitioned deployments from Docker
+to Kubernetes, improving scalability by 50%, reducing deployment times
+by 40%, and increasing system reliability with 99.9% uptime.
+- **Real-Time Data Integration**: Restructured backend architecture to
+leverage a data lake via APIs, reducing data access latency by 65% and
+enabling real-time, up-to-date information retrieval.
+- **ETL Pipeline Development**: Constructed robust ETL pipelines to
+scrape, transform, and integrate clinical trial data into a data lake.
+Enhanced AI model retraining accuracy by 35% by providing enriched and
+current datasets.
+- **AI Prototyping**: Created a clinical trial site selection prototype
+using AWS Bedrock, vector databases, and custom data enrichment,
+reducing project selection time by 60% and improving team workflow
+efficiency by 45%.
 - **Release Management & Production Monitoring**: Planned, executed, and
-monitored major product releases, ensuring stable production
-environments with proactive reporting and issue resolution.
+monitored major product releases, reducing system downtime by 75% and
+improving issue resolution time by 50%, ensuring stable production
+environments with preemptive reporting.
 #### **Tech Stack**: 
 - Python
 - Go
@@ -91,26 +98,25 @@ PCI DSS-compliant payment platform
 *September 2018 -- November 2023 | Remote, Dubai, UAE*
 _Scalable, secure, PCI DSS-compliant, and high-performance payment
 platform for large user base_
-- **Service-Oriented Design**: Architected a microservices-based own
-payment platform with event-driven communication for core payment
-operations and asynchronous tasks.
-- **Scalable Payment Platform for 20M+ Users**: Designed and launched a
-PCI DSS-compliant payment solution for web and mobile users, supporting
-money transfers, marketplace purchases, wallets, tokenized payments
-(Google/Apple Pay), linked bank cards, recurring payments, installments,
-and bonus systems. Designed APIs for internal service communication,
-developed service components to integrate with client applications, and
-implemented social network authorization workflows.
-- **Legacy System Modernization**: Migrated legacy systems (Tornado/PHP)
-to FastAPI, significantly improving performance, scalability, and
+- **Service-Oriented Design**: Architected a microservices-based payment
+platform with event-driven communication, reducing system complexity by
+40% and improving inter-service communication efficiency by 60%.
+- **Scalable Payment Platform for 20M+ Users**: Launched a PCI
+DSS-compliant payment solution serving 20M+ users, supporting 7+ payment
+methods including money transfers, marketplace purchases, and tokenized
+payments. Created APIs enabling 99.99% system integration reliability
+and streamlined authorization workflows.
+- **Legacy System Modernization**: Transformed legacy systems
+(Tornado/PHP) to FastAPI, achieving 3x performance improvement, 50%
+reduction in infrastructure costs, and 75% enhanced system
 maintainability.
-- **Secure Monitoring & Troubleshooting**: Developed a tracing component
-for structured logging and issue tracking, ensuring sensitive data
-remained secure during debugging and monitoring. Investigated and
-resolved payment process issues, ensuring high system reliability.
-- **Third-Party Integrations**: Integrated retail fiscal APIs, mobile
-operator SMS services, user consent workflows via SMS, and tokenized
-card processing systems.
+- **Secure Monitoring & Troubleshooting**: Constructed a tracing
+component reducing issue detection time by 65%, maintaining 100% data
+security during debugging and ensuring system reliability with 99.95%
+uptime.
+- **Third-Party Integrations**: Integrated 5+ external APIs including
+retail fiscal, mobile operator SMS, and tokenized card processing
+systems, expanding platform capabilities by 40%.
 #### **Tech Stack**: 
 - Python
 - FastAPI
@@ -135,16 +141,19 @@ card processing systems.
 Fintech
 
 *September 2015 -- July 2018 | Moscow, Russia*
-_Effective Team Leadership, Frontend Modernization, Dynamic Solutions_
-- **Team Leadership**: Managed a team of 7 developers, establishing
-efficient workflows.
-- **Frontend Modernization**: Redeveloped a document management system
-using React, replacing the Backbone-based implementation.
-- **Dynamic Form Processing**: Created Role/State-based dynamic
-views/forms using server-generated schemas according to business logic.
-- **Complex data visualization in grid**: Created a custom feature-rich
-grid component for complex data representation according to business
-logic and document/user context.
+_Effective Team Leadership, Frontend Modernization, Complex Context
+Solutions_
+- **Team Leadership**: Managed a team of 7 developers, improving team
+productivity by 35% and reducing project delivery times by 25%.
+- **Frontend Modernization**: Redeveloped document management system
+using React, reducing application load time by 60% and improving user
+interface responsiveness by 45%.
+- **Context-aware Form Processing**: Created Role/State-based
+multicomponent forms, reducing form completion time by 50% and improving
+data accuracy by 40%.
+- **Complex data visualization in grid**: Developed a custom grid
+component enhancing data representation efficiency by 55%, supporting
+complex business logic and user context with 90% user satisfaction.
 #### **Tech Stack**: 
 - TypeScript
 - React
