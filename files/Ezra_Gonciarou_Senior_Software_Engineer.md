@@ -17,7 +17,6 @@ DSS-compliant platforms for large user bases, optimizing workflows and
 enhancing system reliability. Experienced in: **Designing and delivering
 AWS and self-managed resilient and well-managed and monitored
 deployments, Setting up LLM workflows with agents, Leveraging rich
-experience with relational and non-relational databases, Leveraging rich
 experience with relational and non-relational databases.** Proficient in
 leading teams, planning major releases, and tackling complex technical
 challenges.
