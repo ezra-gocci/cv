@@ -1,5 +1,5 @@
 ---
-date: "January 2025"
+date: "February 2025"
 year: "2025"
 css: "./website/main.css"
 title: "Ezra's CV"
@@ -7,7 +7,7 @@ firstname: "Konstantin"
 middlename: "Ezra"
 lastname: "Gonciarou"
 author: "Konstantin Ezra Gonciarou"
-position: "Senior Software Engineer - System Architect"
+position: "Senior Software Engineer - Python"
 contacts:
   github: "ezra-gocci"
   linkedin: "ezra-gocci"
@@ -20,12 +20,12 @@ sections:
     emoji: "📌"
     is_summary: true
     items:
-      - "A seasoned \\headerpositionstyle{Senior Software Engineer and System Architect} who has built scalable, secure, and high-performance systems across pharmacology, healthcare, energy, and fintech industries. Skilled in microservices architecture, system modernization, and creating end-to-end solutions with robust data integration and advanced monitoring capabilities. Successfully delivered GDPR and PCI DSS-compliant platforms for large user bases, optimizing workflows and enhancing system reliability. Experienced in: \\headerpositionstyle{Designing and delivering AWS and self-managed resilient and well-managed and monitored deployments, Setting up LLM workflows with agents, Leveraging rich experience with relational and non-relational databases.} Proficient in leading teams, planning major releases, and tackling complex technical challenges."
+      - "A seasoned \\headerpositionstyle{Senior Python Engineer} who has built scalable, secure, and high-performance systems across pharmacology, healthcare, energy, and fintech industries. Skilled in microservices architecture, system modernization, and creating end-to-end solutions with robust data integration and advanced monitoring capabilities. Successfully delivered GDPR and PCI DSS-compliant platforms for large user bases, optimizing workflows and enhancing system reliability. Experienced in: \\headerpositionstyle{Designing and delivering AWS and self-managed resilient and well-managed and monitored deployments, Setting up LLM workflows with agents, Leveraging rich experience with relational and non-relational databases.} Proficient in creating backends built on modern asyncronous Python and popular frameworks and tools."
   - title: "Professional experience"
     emoji: "💼"
     is_experience: true
     items:
-      - job_title: "Senior Software Engineer / System Architect"
+      - job_title: "Senior Software Engineer"
         organization: "Insilico Medicine"
         url: "https://insilico.com"
         industry: "Pharmacology/Healthcare AI Suite"
@@ -120,17 +120,15 @@ sections:
           - "Jaeger"
           - "GraphQL"
           - "gRPC"
-      - job_title: "Team Lead - Senior Frontend Developer"
+      - job_title: "Senior Frontend Developer"
         organization: "Progredis"
         url: "http://www.progredis.ru"
         industry: "Fintech"
         location: "Moscow, Russia"
         date: "September 2015 – July 2018"
         highlights:
-          - "Effective Team Leadership, Frontend Modernization, Complex Context Solutions"
+          - "Frontend Modernization, Complex Context Solutions"
         tasks:
-          - lead: "Team Leadership"
-            description: "Managed a team of 7 developers, improving team productivity by 35% and reducing project delivery times by 25%."
           - lead: "Frontend Modernization"
             description: "Redeveloped document management system using React, reducing application load time by 60% and improving user interface responsiveness by 45%."
           - lead: "Context-aware Form Processing"
@@ -140,7 +138,6 @@ sections:
         tech_stack:
           - "TypeScript"
           - "React"
-          - "Java"
           - "PostgreSQL"
           - "MySQL"
           - "GraphQL"
@@ -183,8 +180,4 @@ sections:
         organization: "University of Inrenational Relationships"
         location: "Moscow, Russia"
         date: "May 2005"
-      - title: "AWS Certified Solutions Architect"
-        organization: "Pluralsight"
-        location: "pluralsight.com/profiles/kostya-gonciarou"
-        date: "2024"
 ---
