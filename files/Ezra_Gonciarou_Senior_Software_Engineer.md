@@ -1,29 +1,28 @@
 # Ezra's CV
 
-**Senior Software Engineer - System Architect**
+**Senior Software Engineer - Python**
 [GitHub](ezra-gocci) | [LinkedIn](ezra-gocci) | [Telegram](EzraGocci)  
 📧 kostya.gonciarou@gmail.com | 📞 +374 55-36-34-57 | 🌍 Yerevan,
 Armenia \[Remote \| Relocation\]
 ---
 
 ## 📌 Summary
-A seasoned **Senior Software Engineer and System Architect** who has
-built scalable, secure, and high-performance systems across
-pharmacology, healthcare, energy, and fintech industries. Skilled in
-microservices architecture, system modernization, and creating
-end-to-end solutions with robust data integration and advanced
-monitoring capabilities. Successfully delivered GDPR and PCI
-DSS-compliant platforms for large user bases, optimizing workflows and
-enhancing system reliability. Experienced in: **Designing and delivering
-AWS and self-managed resilient and well-managed and monitored
-deployments, Setting up LLM workflows with agents, Leveraging rich
-experience with relational and non-relational databases.** Proficient in
-leading teams, planning major releases, and tackling complex technical
-challenges.
+A seasoned **Senior Python Engineer** who has built scalable, secure,
+and high-performance systems across pharmacology, healthcare, energy,
+and fintech industries. Skilled in microservices architecture, system
+modernization, and creating end-to-end solutions with robust data
+integration and advanced monitoring capabilities. Successfully delivered
+GDPR and PCI DSS-compliant platforms for large user bases, optimizing
+workflows and enhancing system reliability. Experienced in: **Designing
+and delivering AWS and self-managed resilient and well-managed and
+monitored deployments, Setting up LLM workflows with agents, Leveraging
+rich experience with relational and non-relational databases.**
+Proficient in creating backends built on modern asyncronous Python and
+popular frameworks and tools.
 ---
 
 ## 💼 Professional experience
-### **Senior Software Engineer / System Architect**
+### **Senior Software Engineer**
 **Insilico Medicine**
 Pharmacology/Healthcare AI Suite
 
@@ -135,15 +134,12 @@ systems, expanding platform capabilities by 40%.
 - GraphQL
 - gRPC
 
-### **Team Lead - Senior Frontend Developer**
+### **Senior Frontend Developer**
 **Progredis**
 Fintech
 
 *September 2015 -- July 2018 | Moscow, Russia*
-_Effective Team Leadership, Frontend Modernization, Complex Context
-Solutions_
-- **Team Leadership**: Managed a team of 7 developers, improving team
-productivity by 35% and reducing project delivery times by 25%.
+_Frontend Modernization, Complex Context Solutions_
 - **Frontend Modernization**: Redeveloped document management system
 using React, reducing application load time by 60% and improving user
 interface responsiveness by 45%.
@@ -156,7 +152,6 @@ complex business logic and user context with 90% user satisfaction.
 #### **Tech Stack**: 
 - TypeScript
 - React
-- Java
 - PostgreSQL
 - MySQL
 - GraphQL
@@ -200,6 +195,4 @@ Pay), Social Network APIs
 ## 🎓 Education
 Master of Law - University of Inrenational Relationships - Moscow,
 Russia - May 2005
-AWS Certified Solutions
-Architect - Pluralsight - pluralsight.com/profiles/kostya-gonciarou - 2024
 ---
